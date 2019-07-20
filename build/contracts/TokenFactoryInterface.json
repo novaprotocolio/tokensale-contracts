@@ -1,0 +1,482 @@
+{
+  "contractName": "TokenFactoryInterface",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_parentToken",
+          "type": "address"
+        },
+        {
+          "name": "_snapshotBlock",
+          "type": "uint256"
+        },
+        {
+          "name": "_tokenName",
+          "type": "string"
+        },
+        {
+          "name": "_tokenSymbol",
+          "type": "string"
+        }
+      ],
+      "name": "createCloneToken",
+      "outputs": [
+        {
+          "name": "newToken",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity 0.4.17;\n\nimport './NovaToken.sol';\n\ncontract TokenFactoryInterface {\n\n    function createCloneToken(\n        address _parentToken,\n        uint _snapshotBlock,\n        string _tokenName,\n        string _tokenSymbol\n      ) public returns (NovaToken newToken);\n}",
+  "sourcePath": "/Users/thanhtu/Projects/Blockchain/novalex-dex-starterkit/tokensale/contracts/contracts/TokenFactoryInterface.sol",
+  "ast": {
+    "absolutePath": "/Users/thanhtu/Projects/Blockchain/novalex-dex-starterkit/tokensale/contracts/contracts/TokenFactoryInterface.sol",
+    "exportedSymbols": {
+      "TokenFactoryInterface": [
+        1985
+      ]
+    },
+    "id": 1986,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1970,
+        "literals": [
+          "solidity",
+          "0.4",
+          ".17"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:13"
+      },
+      {
+        "absolutePath": "/Users/thanhtu/Projects/Blockchain/novalex-dex-starterkit/tokensale/contracts/contracts/NovaToken.sol",
+        "file": "./NovaToken.sol",
+        "id": 1971,
+        "nodeType": "ImportDirective",
+        "scope": 1986,
+        "sourceUnit": 1545,
+        "src": "25:25:13",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 1985,
+        "linearizedBaseContracts": [
+          1985
+        ],
+        "name": "TokenFactoryInterface",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "id": 1984,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "createCloneToken",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1980,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1973,
+                  "name": "_parentToken",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1984,
+                  "src": "125:20:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1972,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "125:7:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1975,
+                  "name": "_snapshotBlock",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1984,
+                  "src": "155:19:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1974,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "155:4:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1977,
+                  "name": "_tokenName",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1984,
+                  "src": "184:17:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string memory"
+                  },
+                  "typeName": {
+                    "id": 1976,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "184:6:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string storage pointer"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1979,
+                  "name": "_tokenSymbol",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1984,
+                  "src": "211:19:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string memory"
+                  },
+                  "typeName": {
+                    "id": 1978,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "211:6:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string storage pointer"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "115:123:13"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 1983,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1982,
+                  "name": "newToken",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1984,
+                  "src": "255:18:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_NovaToken_$1544",
+                    "typeString": "contract NovaToken"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 1981,
+                    "name": "NovaToken",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 1544,
+                    "src": "255:9:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_NovaToken_$1544",
+                      "typeString": "contract NovaToken"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "254:20:13"
+            },
+            "scope": 1985,
+            "src": "90:185:13",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 1986,
+        "src": "52:225:13"
+      }
+    ],
+    "src": "0:277:13"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/thanhtu/Projects/Blockchain/novalex-dex-starterkit/tokensale/contracts/contracts/TokenFactoryInterface.sol",
+    "exportedSymbols": {
+      "TokenFactoryInterface": [
+        1985
+      ]
+    },
+    "id": 1986,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1970,
+        "literals": [
+          "solidity",
+          "0.4",
+          ".17"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:13"
+      },
+      {
+        "absolutePath": "/Users/thanhtu/Projects/Blockchain/novalex-dex-starterkit/tokensale/contracts/contracts/NovaToken.sol",
+        "file": "./NovaToken.sol",
+        "id": 1971,
+        "nodeType": "ImportDirective",
+        "scope": 1986,
+        "sourceUnit": 1545,
+        "src": "25:25:13",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 1985,
+        "linearizedBaseContracts": [
+          1985
+        ],
+        "name": "TokenFactoryInterface",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "id": 1984,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "createCloneToken",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1980,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1973,
+                  "name": "_parentToken",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1984,
+                  "src": "125:20:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1972,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "125:7:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1975,
+                  "name": "_snapshotBlock",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1984,
+                  "src": "155:19:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1974,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "155:4:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1977,
+                  "name": "_tokenName",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1984,
+                  "src": "184:17:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string memory"
+                  },
+                  "typeName": {
+                    "id": 1976,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "184:6:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string storage pointer"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1979,
+                  "name": "_tokenSymbol",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1984,
+                  "src": "211:19:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string memory"
+                  },
+                  "typeName": {
+                    "id": 1978,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "211:6:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string storage pointer"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "115:123:13"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 1983,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1982,
+                  "name": "newToken",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1984,
+                  "src": "255:18:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_NovaToken_$1544",
+                    "typeString": "contract NovaToken"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 1981,
+                    "name": "NovaToken",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 1544,
+                    "src": "255:9:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_NovaToken_$1544",
+                      "typeString": "contract NovaToken"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "254:20:13"
+            },
+            "scope": 1985,
+            "src": "90:185:13",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 1986,
+        "src": "52:225:13"
+      }
+    ],
+    "src": "0:277:13"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.17+commit.bdeb9e52.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.11",
+  "updatedAt": "2019-06-27T04:09:14.863Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
