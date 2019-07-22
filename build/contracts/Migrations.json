@@ -74,20 +74,14 @@
   "ast": {
     "absolutePath": "/Users/thanhtu/Projects/Blockchain/novalex-dex-starterkit/tokensale/contracts/contracts/Migrations.sol",
     "exportedSymbols": {
-      "Migrations": [
-        212
-      ]
+      "Migrations": [212]
     },
     "id": 213,
     "nodeType": "SourceUnit",
     "nodes": [
       {
         "id": 157,
-        "literals": [
-          "solidity",
-          "0.4",
-          ".17"
-        ],
+        "literals": ["solidity", "0.4", ".17"],
         "nodeType": "PragmaDirective",
         "src": "0:23:4"
       },
@@ -98,9 +92,7 @@
         "documentation": null,
         "fullyImplemented": true,
         "id": 212,
-        "linearizedBaseContracts": [
-          212
-        ],
+        "linearizedBaseContracts": [212],
         "name": "Migrations",
         "nodeType": "ContractDefinition",
         "nodes": [
@@ -478,9 +470,7 @@
               "src": "381:109:4",
               "statements": [
                 {
-                  "assignments": [
-                    199
-                  ],
+                  "assignments": [199],
                   "declarations": [
                     {
                       "constant": false,
@@ -719,20 +709,14 @@
   "legacyAST": {
     "absolutePath": "/Users/thanhtu/Projects/Blockchain/novalex-dex-starterkit/tokensale/contracts/contracts/Migrations.sol",
     "exportedSymbols": {
-      "Migrations": [
-        212
-      ]
+      "Migrations": [212]
     },
     "id": 213,
     "nodeType": "SourceUnit",
     "nodes": [
       {
         "id": 157,
-        "literals": [
-          "solidity",
-          "0.4",
-          ".17"
-        ],
+        "literals": ["solidity", "0.4", ".17"],
         "nodeType": "PragmaDirective",
         "src": "0:23:4"
       },
@@ -743,9 +727,7 @@
         "documentation": null,
         "fullyImplemented": true,
         "id": 212,
-        "linearizedBaseContracts": [
-          212
-        ],
+        "linearizedBaseContracts": [212],
         "name": "Migrations",
         "nodeType": "ContractDefinition",
         "nodes": [
@@ -1123,9 +1105,7 @@
               "src": "381:109:4",
               "statements": [
                 {
-                  "assignments": [
-                    199
-                  ],
+                  "assignments": [199],
                   "declarations": [
                     {
                       "constant": false,
