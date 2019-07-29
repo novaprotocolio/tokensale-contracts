@@ -24,6 +24,14 @@ module.exports = {
       gas: config.constants.MAX_GAS || 10000000,
       gasPrice: 1
     },
+    ganache: {
+      network_id: '*',
+      host: '127.0.0.1',
+      port: 7545,
+      from: config.addresses.ganache.WALLET_ADDRESS,
+      gas: config.constants.MAX_GAS || 10000000,
+      gasPrice: 1
+    },
     // debug: {
     //   network_id: '*',
     //   provider: () => {
