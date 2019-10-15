@@ -49,7 +49,9 @@ Only the controller of the Nova token contract can call this function
 #### 4. Transfer the Nova Token control to the Tokensale contract
 
 Nova tokens can only be created by the controller contract. The control of the nova Token can be given
-from the contract creator to the tokensale by calling the `changeControl` function.
+from the contract creator to the tokensale by calling the `transferControl` function.
+There can be many tokensales.
+Later can call `changeController` in TokenSale contract.
 
 #### 5. Transfer the ownership of the Tokensale contract to a custom wallet
 

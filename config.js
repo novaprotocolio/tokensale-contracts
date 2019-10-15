@@ -28,8 +28,8 @@ let config = {
       TOKEN_WALLET_ADDRESS: '0x9fbdaac5faf6711f38ab26541b7c0d72cb2c0e11'
     },
     ropsten: {
-      WALLET_ADDRESS: '',
-      TOKEN_WALLET_ADDRESS: ''
+      WALLET_ADDRESS: '0x31Ebd457b999Bf99759602f5Ece5AA5033CB56B3',
+      TOKEN_WALLET_ADDRESS: '0x31Ebd457b999Bf99759602f5Ece5AA5033CB56B3'
     },
     ethereum: {
       WALLET_ADDRESS: '0x11e3de1bda2650fa6bc74e7cea6a39559e59b103',
